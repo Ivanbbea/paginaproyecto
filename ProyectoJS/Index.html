@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Proyecto</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 257px;
+	height: 43px;
+	z-index: 1;
+	left: 533px;
+	top: 73px;
+}
+</style>
+<style type="text/css">
+
+form {
+	width: 300px;
+	margin: auto;
+}
+
+label {
+	width: 200px;
+	display: block;
+	margin: 10px;
+	float: left;
+}
+input[type=text],select  {
+	width: 200px;
+	float: left;
+}
+
+button {
+	display:block;
+	clear: both;
+	margin-left: 200px;
+}
+
+ul {
+	list-style:none;
+	margin: 0px;
+}
+
+li  {
+	margin: 0px;
+	padding: 0px;
+	height: 80px;
+}
+
+.enfoco  {
+	background-color: #9F9;
+	border: 1px solid green;
+}
+
+.ayuda  {
+	font-size:xx-small;
+	color:green;
+}
+
+</style>
+</head>
+<script LANGUAJE="JavaScript">
+ //Visualizar un mensaje de bienvenida
+ alert("¡Bienvenido a mi página prdofe!");
+ function confirmar()
+ {
+	  return confirm("Esta página contiene información que está de hueva, ¿'Ta seguro que quiere verla? :)")
+ }
+ var nom;
+nom=prompt("Escriba su nombre","NOMBRE");
+alert("Wenas tardes "+ nom);
+
+//Relog en la pantalla
+
+	function Ver_Hora()
+{
+	var mihora = new Date();
+	var horas = mihora.getHours().toString();
+	var minutos = mihora.getMinutes().toString();
+	if (minutos.length == 1) minutos = "0" + minutos;
+	var segundos = mihora.getSeconds().toString();
+	if (segundos.length == 1) segundos = "0" + segundos;
+document.forms[0].mireloj.value = horas + " : " + minutos + " : " + segundos;
+}
+function abrir(){
+   popup = window.open("popup.html","_blanck","width=300, height=400, resizable=no, toolbar=yes,  menubar=yes, status=yes, scrollbars=no");
+}
+function recibirMensaje(mensaje){
+	document.getElementById("mensaje").innerHTML=mensaje;
+}
+
+ </script>
+<body>
+
+<HR ALIGN="CENTER"SIZE="20"WIDTH="100%"COLOR="#10063B"NOSHADE>
+<form>
+<p align="center">
+<input type="text" size="10" name="mireloj">
+</p>
+</form>
+<script>
+var r = setInterval ("Ver_Hora()",500);
+</script>
+<form><br><br><br><br><br><br>
+<ul>
+
+<li>
+<label for="nombre"> Nombre </label>
+<input type="text" id="nombre" name="nombre" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+</li>
+
+<li>
+<label for="direccion"> Dirección </label>
+<input type="text" id="direccion" name="direccion" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+</li>
+
+<li>
+<label for="edad"> Edad </label>
+<input type="text" id="edad" name="edad" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+</li>
+
+<li>
+<label for="email"> E-mail </label>
+<input type="text" id="email" name="email" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+</li>
+
+<li>
+<label for="estadocivil"> Estado Civil</label>
+<select id="estadocivil" name="estadocivil" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+      <option>Seleccione</option>
+      <option>Soltero/a</option>
+      <option>Casado/a</option>
+      <option>Viudo/a</option>
+      <option>Disvorciado/a</option>
+</select>
+</li>
+<li>
+<label>
+<input type="checkbox" value="SI" />
+Acepto las condiciones 
+</label>
+</li>
+</ul>
+<button>Registrarme</button>
+
+
+</form>
+<br><br><br><br><br><br><div id="apDiv1">
+  <embed src="star_wars.mp3" width="256" height="41" loop="true"></embed>
+</div>
+<br><br><p align="center" style="font:italic 40px Georgia"><b>Colonización de otros planetas</b></p>
+<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\cono.jpg" WIDTH="1325" HEIGHT="400"ALIGN="center">
+<p align="left">La colonización de otros mundos es un sueño largamente acariciado por el ser humano. Aunque, a día de hoy, ese sueño está aún lejos de hacerse realidad.<br> Hay quien cree incluso que nunca llegará a ser algo más que una quimera. Como, por ejemplo, Jean Jacques Dordain, director de la Agencia Espacial<br> Europea quien, en 2014, declaró que:<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\colonia.jpg" WIDTH="350" HEIGHT="310"ALIGN="right"><p align="left" style="font:italic 14px Georgia"><b>«No hay alternativa al planeta Tierra para la humanidad. No hay otro lugar en el que se pueda vivir.<br> No podemos hacerlo en otros planetas del Sistema Solar, o ir a un exoplaneta porque está demasiado lejos».</b><br><br>
+
+<p align="left">Pese a ello, los científicos y astrónomos no dejan de buscar planetas que reúnan ciertas condiciones de habitabilidad.<br><br>
+
+Tal vez Dordain tenga razón, y nunca seamos capaces de colonizar un planeta diferente al nuestro.<br>
+Es un importante tema de la antigua ciencia ficción, pero que actualmente se considera dentro del campo de la ciencia de nuestros días.<br><br>
+
+Mientras que la mayoría de la gente piensa en colonias espaciales en la Luna, o en Marte, otros opinan que las primeras colonias estarán en órbita.<br> Varios grupos de diseño de la NASA, ESA y de otros lugares, han examinado la viabilidad de establecer una colonia en órbita.<br> Determinaron que hay suficiente cantidad de todos los materiales necesarios en la Luna, y en asteroides cercanos a la Tierra, que la energía solar<br> está fácilmente disponible en grandes cantidades, y que no se requieren nuevos descubrimientos científicos, aunque sí será necesario un gran<br> despliegue de ingeniería.</p><br><br><br><br>
+<HR ALIGN="CENTER"SIZE="15"WIDTH="75%"COLOR="#636363"NOSHADE>
+<FONT COLOR="blue" SIZE="6">La llave de la colonización de otros planetas.<br><br></FONT>
+<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\elon.jpg" WIDTH="250" HEIGHT="250"ALIGN="right">
+<p align="left">Hace años llevar personas al espacio parecía una tarea imposible, que vivieran ahí era algo casi <br>inimaginable pero los avances en la industria aeroespacial hacen que la línea se vuelva más y más delgada.
+
+<p align="left" size="10" style="font:italic 15px Georgia"><b>“Si uno puede descubrir cómo reutilizar efectivamente los cohetes al igual que los aviones, el costo de acceso<br> al espacio se reducirá hasta en un factor de cien. Un vehículo totalmente reutilizable nunca se había hecho<br> antes. Ese es realmente el avance fundamental necesario para revolucionar el acceso al espacio ".<br></p>
+–Elon Musk.<br><br></b>
+
+El costo promedio por misión espacial asciende a los cuatrocientos cincuenta billones de dólares, gran parte del cual tiene que ver con la construcción del cohete. Un cohete espacial generalmente está diseñado para usarse una vez, ya que al entrar en la atmósfera el vehículo se desintegra debido al calor resultante de la fricción generada por el reingreso o bien sufre ciertos daños por la caída en las aguas oceánicas, al igual que por el contacto con las mismas. Tal como plantea Musk, uno de los principales retos para permitir el acceso al espacio a más personas es crear un cohete que pueda ser reutilizado tantas veces como un avión de pasajeros.<br><br><br>
+<FONT COLOR="#2e3a23" SIZE="5">SpaceX: Making life multiplanetary<br><br></FONT>
+
+SpaceX fue fundada en 2002 por Elon Musk, su principal meta: ayudar a la raza humana a convertirse en una especie multi planetaria; esto mediante el desarrollo de tecnologías que permitan a la raza humana reducir los costos de transportación espacial y, a su vez, permitir la colonización de Marte gracias a la inversión privada. Se trata de una empresa aeroespacial que diseña, manufactura y lanza vehículos espaciales. Cuenta con más de cinco mil empleados, con instalaciones en varias partes de Estados Unidos y con más de setenta misiones, de las cuales más de la mitad ya han sido lanzadas. La empresa cree firmemente que la clave para la colonización de otros planetas yace en un sistema que permita la reutilización total de los vehículos espaciales, al igual que su rápido redespliegue. De manera que se asemeje a un modelo de aerolínea comercial.<br><br>
+A continuación se muestra un video del plan que tiene Elon Musk Para colonizar Marte: 
+<table width="600" border="1">
+  <tr>
+    <td><iframe width="1349" height="480" src="https://www.youtube.com/embed/UyFhdxYAJyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&nbsp;</td>
+  </tr>
+</table>
+
+<a href="https://www.spacex.com/" onclick="return confirmar()">Enlace a la página oficial de Spacex</a><br><br><br>
+
+<FONT COLOR="blue" SIZE="6"><b>Soporte vital</b></FONT><br>
+<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\tierra.jpg" WIDTH="350" HEIGHT="350"ALIGN="right"><br><br><br>
+Concepción artística de Marte terraformado. La terraformación de planetas como Venus y Marte es un objetivo a largo plazo.
+El ser humano necesita aire, agua, comida y temperaturas razonables para sobrevivir. En la Tierra todo esto es proporcionado por una enorme y compleja biosfera. En los asentamientos espaciales, un sistema cerrado y relativamente pequeño debe reciclar todos los nutrientes sin colapsarse. El proyecto Biosphere II en Arizona ha demostrado que una biosfera construida por el hombre en un complejo pequeño y cerrado puede albergar a ocho seres humanos durante al menos un año, aunque hubo varios problemas. Al cabo de un año de los dos que debía durar la misión, el oxígeno hubo de ser repuesto, lo que sugiere que se alcanzó la hermeticidad atmosférica. Las relaciones entre organismos, sus hábitat, y el entorno no terrestre, pueden ser:<br>
+<br>
+Organismos y sus hábitat totalmente aislados del entorno (los ejemplos incluyen biosferas artificiales, Biosphere 2, sistemas de soporte vital).<br>
+
+Cambiar el entorno para convertirlo en un hábitat apto para la vida (un proceso llamado terraformación).<br>
+
+Cambiar los organismos para convertirlos en más compatibles con el entorno, por ejemplo, integrando el hábitat en los organismos (Véase también: Ingeniería genética, transhumanismo, cyborg).<br><br><br>
+
+También es posible una combinación de lo arriba expuesto.<br><br>
+
+<FONT COLOR="blue" SIZE="6"><b>Protección contra la radiación</b></FONT><br><br>
+Los rayos cósmicos y las variaciones solares crean un entorno de radiación letal en el espacio. Para proteger la vida, los asentamientos deben estar rodeados de suficiente masa que absorba la mayor parte de la radiación que llegue. Se requieren alrededor de cinco o diez toneladas de material por metro cuadrado de superficie. Esto se puede llevar a cabo con el material de desecho que queda del procesado del regolito lunar y de los asteroides después de extraerles oxígeno, metales y otros materiales útiles.<br><br>
+
+<FONT COLOR="blue" SIZE="6"><b>Auto replicación</b></FONT><br><br>
+La auto replicación es un atributo opcional, pero muchos piensan en ello como el último objetivo porque permite un incremento mucho mayor de las colonias al reducir costes y dependencia de la Tierra. Se puede argumentar que el establecimiento de una colonia así sería el primer acto de auto replicación de la Tierra. Los objetivos a medio plazo incluyen colonias que sólo esperen información procedente de la Tierra (ciencia, ingeniería, ocio, etc.) y colonias que sólo requieran un aporte periódico de objetos de poco peso, como circuitos integrados, medicamentos, material genético y quizás algunas herramientas.<br>
+
+Véase también: prueba de von Neumann, auto replicante, nanotecnología molecular.<br><br>
+
+<FONT COLOR="blue" SIZE="6"><b>Tamaño de las poblaciones</b></FONT><br><br>
+En 2002, el antropólogo John H. Moore estimó que una población de 150-180 individuos permitiría la reproducción normal de 60-80 generaciones (equivalente a 2000 años). Una población inicial mucho más reducida de dos hembras humanas sería viable mientras hubiera embriones humanos disponibles en la Tierra. El uso de un banco de esperma desde nuestro planeta también proporcionaría una base inicial con una endogamia despreciable.<br><br>
+
+<FONT COLOR="blue" SIZE="6"><b>Localización</b></FONT><br><br>
+Uno de los aspectos más importantes es la localización de la colonia. Las diferentes posibilidades son:<br><br>
+
+-Un planeta<br>
+-Un satélite natural<br>
+-Un asteroide<br>
+-En la órbita de un cuerpo celeste<br>
+-En una nave espacial tripulada<br><br><br>
+
+<FONT COLOR="blue" SIZE="6"><b>Espacio</b></FONT><br><br>
+Otra posibilidad que no involucra ningún cuerpo celeste es la de una estación espacial, de enormes dimensiones, capaz de albergar a cientos de miles de personas. Estas estaciones podrían ser construidas tanto en la órbita terrestre como en los distintos puntos de Lagrange. La ventaja que presenta esta posibilidad es que las estaciones estarían relativamente cerca de la Tierra y tendrían energía solar abundante.<br>
+
+Finalmente, otra posibilidad es colonizar asteroides. Una ventaja es que poseen gran cantidad de material, aunque su órbita los aleja considerablemente de la tierra, pasando cerca algunas veces por década. Para colonizar asteroides, sería preciso colocar cohetes para poder dirigir su rumbo, en caso de una posible colisión con algún otro asteroide, planeta, o satélite.<br>
+
+Dentro del cinturón de asteroides, el caso de Ceres es un objetivo por su localización, ya que al ser el cuerpo más grande del cinturón, podría convertirse en un centro de recolección, procesamiento y exportación, de recursos de asteroides cercanos. Sin embargo, carece de atmósfera y de un campo magnético.<br><br><br>
+
+<FONT COLOR="blue" SIZE="6"><b>Impacto del ser humano</b></FONT><br><br>
+
+Esto nos conduce a otra pregunta: ¿Sería posible para el ser humano,a través de esta
+fuga de la Tierra, dejar atrás la agresividad y con esta las principales causas de su (posible)
+auto-destrucción? El análisis de estas causas tiene, por tanto, una relación estrecha con el
+futuro de la exploración (y migración) espacial. Porque la agresividad puede influir también
+en los procesos que llevan a una migración potencialmente salvadora. Si tiene que haber
+una selección, tendrán que establecerse reglas para hacerla. Y si partimos de una situación
+inicial en la que existen desigualdades, es lógico suponer que, en una humanidad todavía
+agresiva, serán las personas privilegiadas quienes buscarán mantener esa situación previa.
+Es necesario, por tanto, analizar el origen de esta dicotomía social. No entraré de modo
+detallado en una discusión psicológica sobre la relación entre agresividad y empatía, pero
+es útil introducir críticamente sus relaciones con nuestra sociedad y con el progreso científico. La relación dialéctica entre dos grandes protagonistas de la historia de la humanidad,
+la tecnología y la ciencia, ha generado, hasta ahora, muchos descubrimientos, pero podría ser un freno a un mayor avance, e incluso la causa misma del trágico futuro predicho por Hawking. Presentemos más detalladamente este problema a través de algunos ejemplos
+históricos.<br><br><br>
+
+
+<FONT COLOR="blue" SIZE="6"><b>Motivación y oposición</b></FONT><br><br>
+<FONT COLOR="black" SIZE="5"><b>Ventajas</b></FONT><br><br>
+Colonizar el espacio traería variadas ventajas: primero, ante una eventual catástrofe en la Tierra (p.ej, una guerra nuclear a gran escala, o cualquier evento que pueda destruir la vida en el planeta) la mejor forma de asegurar la supervivencia de la especie humana es la colonización espacial, además de poder preservar a otras especies animales y vegetales. Otra ventaja es la posibilidad de extraer recursos de otros planetas o satélites, los que podrían ayudar a desarrollar nuevas fuentes de energía, como el mencionado caso del helio-3<br><br>
+
+<FONT COLOR="black" SIZE="5"><b>Criticas y desventajas</b></FONT><br><br>
+Sin embargo, hay opiniones que sostienen que colonizar el espacio es una pérdida de dinero y tiempo, que podría invertirse en mejorar las condiciones de vida de la gente de este planeta (hecho que por fuerza nos conduciría a la expansión por el Universo debido a la probable superdensidad demográfica y al avance tecnológico constante). A la larga, en un horizonte muy lejano, la necesaria muerte del Sol como estrella, fuente de energía y mantenimiento del sistema solar, obligaría al ser humano a impulsar la ocupación espacial, con la consecuente candidatura de planetas extrasolares para la colonización. Otra opinión en contra consiste en el pensamiento de que la colonización del espacio representa una continuación del colonialismo que se ha desarrollado durante la historia, y que esto dividiría más a las distintas naciones o estados, en lugar de unir a la humanidad como algo único; pero este hecho podría darse de forma opuesta debido a la necesidad de unión entre los seres humanos al verse obligados a expandirse por el Universo. No obstante, las teorías al respecto son muy relativas, diversas y/o dispares.<br>
+
+Otra crítica es la posibilidad de provocar una contaminación interplanetaria en planetas que puedan albergar hipotéticas formas de vida extraterrestres.<br><br><br>
+
+<HR ALIGN="CENTER"SIZE="20"WIDTH="100%"COLOR="#6C2626"NOSHADE>
+<FONT COLOR="red" SIZE="6"><p Align="center">6 PLANETAS QUE EL SER HUMANO PODRÍA COLONIZAR.<br><br></p></font>
+<FONT COLOR="black" SIZE="7"><b><u>Marte</u></b><br></font>
+<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\marte.jpg" WIDTH="750" HEIGHT="450"ALIGN="center"><br><br><br>
+El Planeta Rojo suele ser el primero que nos viene a la cabeza cuando oímos hablar de la colonización espacial. Pero, en principio, instalar un     asentamiento<br> humano en su superficie no sería una tarea sencilla, ya que su entorno es hostil para nosotros.<br><br>
+ En primer lugar, su atmósfera es irrespirable para el ser humano. La radiación solar es tan alta que acabaría resultando letal. Y, lo más importante de todo,<br> sería necesario encontrar agua para poder sobrevivir allí.<br><br>
+Marte tiene polos, pero el hielo de los mismos no está hecho de agua, sino de dióxido de carbono. Aunque las exploraciones realizadas han encontrado <br>indicios que parecen sugerir la existencia de corrientes subterráneas de agua.<br><br>
+ Pero, aunque lográsemos acceder al preciado líquido, los colonos marcianos tendrían que vivir confinados en bases, para disponer de aire respirable y <br>estar protegidos de las radiaciones. Además, para cultivar alimentos habría que construir grandes invernaderos, ya que el suelo marciano parece demasiado <br>árido para la agricultura.<br><br>
+ Otra posibilidad hipotética de cara a poder vivir en el Planeta Rojo, sería intentar terraformarlo, es decir, modificar sus condiciones naturales para<br> tratar de hacerlo más semejante a la Tierra.<br><br>
+Existen muchas propuestas teóricas que sugieren posibles formas de terraformar Marte. Una de las más extravagantes es la que propuso el controvertido <br>empresario Elon Musk, quien sugirió la posibilidad de bombardear con armas nucleares los polos marcianos, para calentar el planeta y hacerlo más similar al nuestro.<br><br>
+<FONT COLOR="black" SIZE="7"><b><u>Venus</u></b><br></font>
+<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\Venus.jpg" WIDTH="750" HEIGHT="600"ALIGN="center"><br><br><br>
+
+Este planeta es uno de los que la NASA considera como potencialmente habitables. A su favor, está el hecho de que se encuentra más cerca de la Tierra<br> que Marte. Pero, en contra, lo está su abrasadora temperatura, y que su presión es más de 90 veces superior a la de nuestro mundo. <br><br>
+Entonces, ¿cómo podríamos habitar en un entorno semejante? La propuesta de la NASA es sencilla. En lugar de vivir sobre la superficie del planeta,<br> tendríamos que hacerlo en bases-ciudades construidas en su atmósfera.<br><br>
+Los científicos apuntan a un lugar situado a unos 50 kilómetros de altura sobre la superficie de Venus, en el que las condiciones de temperatura, presión<br> y humedad serían idóneas para instalar hipotéticas bases flotantes que fueran habitadas por humanos.<br><br>
+<FONT COLOR="black" SIZE="7"><b><u>Titán</u></b><br></font>
+<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\titan.jpg" WIDTH="750" HEIGHT="600"ALIGN="center"><br><br><br>
+En esta ocasión no vamos a hablar de un planeta, sino de una de las lunas de Saturno. Este satélite es uno de los candidatos preferidos por los científicos<br> para una posible colonización humana. Aunque, eso sería en un futuro aún muy lejano.<br><br>
+Titán tiene una pequeña atmósfera que protege al planeta de las radiaciones, y posee agua, aunque en forma de hielo. El problema es que está tan<br> lejos del Sol que, actualmente, la temperatura en su superficie ronda los-180 grados.<br><br>
+Pero los científicos creen que dentro de varios millones de años, cuando el brillo del Sol sea más intenso y su resplandor se extienda, la temperatura de<br> Titán se hará muchísimo más suave, y se derretirá el hielo con lo que habrá agua en forma líquida. Y en ese momento, sería el lugar idóneo para la<br> colonización humana.<br><br>
+Si es que aún quedan humanos, claro está. xdxd<br><br>
+
+<FONT COLOR="black" SIZE="7"><b><u>Kapteyn B</u></b><br></font>
+<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\kapteynb.jpg" WIDTH="750" HEIGHT="600"ALIGN="center"><br><br><br>
+ Decir que este cuerpo celeste se encuentra a unos trece años luz de la Tierra, resulta descorazonador. Pero, pese a ello, está considerado uno de los <br>exoplanetas potencialmente habitables más cercanos al nuestro. Se encuentra situado en la zona de habitabilidad de su estrella, lo que implica que las posibilidades<br> de que existan agua y oxígeno en su superficie son altas.<br><br>
+ 
+ <FONT COLOR="black" SIZE="7"><b><u>Kepler 22-B</u></b><br></font>
+<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\kepler.jpg" WIDTH="750" HEIGHT="600"ALIGN="center"><br><br><br>
+Situado a 600 años luz de la Tierra, este planeta está considerado como un gemelo del nuestro. Orbita en la zona de habitabilidad de su estrella (llamada Kepler 22),<br> lo que hace suponer que la temperatura de su superficie  oscila entre los 27 y los 22 grados centígrados de media. Es imposible saber con certeza si tiene una atmósfera<br> respirable y agua líquida, pero es uno de los más firmes candidatos para instalar una futurible e hipotética colonia humana.<br><br>
+
+<FONT COLOR="black" SIZE="7"><b><u>Gliese 581 g</u></b><br></font>
+<IMG SRC="C:\Users\ASUS\Desktop\ProyectoJS\img\gliese.jpg" WIDTH="750" HEIGHT="600"ALIGN="center"><br><br><br>
+Situado a 20,3 años luz, este planeta descubierto en 2010 no está precisamente cerca. Pero los científicos coinciden en que puede ser el que presente las mejores<br> condiciones para ser habitado por el ser humano. De hecho, el astrónomo británico Paul Butler lo bautizó con el apodo de «planeta ricitos de oro», por sus ideales<br> condiciones ambientales.<br><br>
+Se sabe con certeza que es un planeta rocoso, como el nuestro, y su situación hace muy probable que tenga agua y atmósfera, aunque eso es imposible saberlo<br> con seguridad. De hecho en esta misma estrella ya se habían descubierto otros dos planetas (Gliese 581 c y d), que también fueron considerados como hipotéticamente<br> habitables, aunque observaciones posteriores echaron por tierra esa esperanza.<br><br>
+
+
+<br><br><br>
+<p align="center">
+<body onload="aplicarEstilosTabla()">
+<table width="430" border="1">
+  <tr>
+    <td width="43">&nbsp;</td>
+    <td width="43">&nbsp;</td>
+    <td width="82">&nbsp;</td>
+    <td width="8">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><table width="383" border="1" id="tabla1">
+      <tr>
+        <td><a href="https://www.youtube.com/watch?v=wSNtFcgH46c">Colonias espaciales</td>
+        
+      </tr>
+      <tr>
+        <td><a href="https://www.lanasa.net/">Página de la Nasa es español</td>
+        
+      </tr>
+
+      <tr>
+        <td><a href="https://www.youtube.com/watch?v=mXshZx5LGKU">Más de Marte</td>
+        
+      </tr>
+
+      </tr>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</p>
+<br><br><br><br><br>
+
+<input type="button" value="Abrir ventana" onclick="abrir()"/>
+<p><a href="javascript:window.close()">Cerrar</a></p>
+<input type="button" value="Comunicacion con la ventana" onclick="popup.recibirMensaje('Hola desde tu dueño')"/>
+<p id="mensaje"></p>
+
+
+
+
+<br><br>
+<br><br><br> 
+
+<a href="javascript:window.print()">Imprimir </a>
+<br>
+<input type="button" onClick="window.location.href ='http://www.video2brain.com/es'" value="V2B" />
+
+<a href="javascript:history.back()"> Back </a>
+
+<input type="button" onClick="document.getElementById('ap1').style.display='block'" value="Abrir PopInter" />
+
+<div id="ap1">
+<p> Esto es una ventana </p>
+<p>&nbsp;</p>
+<a href = "javascript:document.getElementById('ap1').style.display='none'">Cerrar</a>
+</div>
+
+<input type="button" value="Comunicacion con la ventana" onClick="popup.recibirMensaje('Esperamos hay sido de tu agrado esta página')" />
+
+<p id="mensaje"></p>
+
+
+<br><br><br><br>
+<p><FONT COLOR="F5F5F5" SIZE="5" FACE="Didot">Si te ha gustado el contenido de la página, no olvides registrartepara ser de los primeros en recibir información </FONT></p>
+<br><br><p>
+
+</body>
+</html>
